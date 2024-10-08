@@ -1,0 +1,14 @@
+org/example/Main.class
+com/stdbank/assessment/model/User.class
+com/stdbank/assessment/resource/UserResource.class
+com/stdbank/assessment/resource/ProductResource.class
+com/stdbank/assessment/repository/UserRepository.class
+com/stdbank/assessment/model/Product.class
+com/stdbank/assessment/utility/JwtUtil.class
+com/stdbank/assessment/utility/JwtAuthenticationFilter.class
+com/stdbank/assessment/repository/ProductRepositoryImpl.class
+com/stdbank/assessment/config/MongoDBConfig.class
+com/stdbank/assessment/service/UserService.class
+com/stdbank/assessment/repository/ProductRepository.class
+com/stdbank/assessment/repository/UserRepositoryImpl.class
+com/stdbank/assessment/service/ProductService.class

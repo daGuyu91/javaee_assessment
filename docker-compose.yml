@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  app:
+    image: yourusername/yourapp:latest  # Replace with your app's image
+    build:
+      context: .
+      dockerfile: Dockerfile  # Specify your Dockerfile if needed
+    ports:
+      - "8080:8080"  # Map container port to host
+    depends_on:
+      - mongo  # Ensure MongoDB starts before the app
+    environment:
+      MONGO_URI: mongodb://mongo:27017/assessment  # MongoDB connection string
+
+  mongo:
+    image: mongo:latest  # Use the latest MongoDB image
+    ports:
+      - "27017:27017"  # Expose MongoDB port
+    volumes:
+      - mongo-data:/data/db  # Persist data
+
+volumes:
+  mongo-data:  # Named volume for MongoDB data persistence
